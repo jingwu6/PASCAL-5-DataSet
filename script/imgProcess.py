@@ -7,9 +7,11 @@ from .txtSolver import record
 def bg_vanish(groundtruth,objective_color):
     assert(groundtruth.shape[2])
     height,width=groundtruth.shape[:2]
+    groundtruth = groundtruth[:, :, :-1]
     for hi in range(height):
         for wj in range(width):
             temp=(groundtruth[hi,wj]*256).astype(np.uint8).tolist()
+
             if not operator.eq(temp,objective_color):
                 groundtruth[hi, wj]=[0,0,0]
             else:
