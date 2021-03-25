@@ -19,8 +19,8 @@ def generate_datalist():
 
 def set_i(index):
     config.current_index=index
-    config.pascal5_classlist = config.class_list[config.current_index * 5:config.current_index + 5]
-    config.pascal5_colormap = config.color_map[config.current_index * 5:config.current_index + 5]
+    config.pascal5_classlist = config.class_list[config.current_index*5:config.current_index* 5+5]
+    config.pascal5_colormap = config.color_map[config.current_index*5:config.current_index* 5+5]
 
 
 
