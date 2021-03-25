@@ -1,2 +1,2 @@
 # PASCAL-5-DataSet
-PASCAL-5 DataSet generation code
+Code for PASCAL-5 Dataset Generation 
